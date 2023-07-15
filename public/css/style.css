@@ -8,23 +8,23 @@ html {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #030402;
+  color: #333;
 }
 
 main,
 .site-name {
-  background-color: #fefefe;
+  background-color: #ffffff;
 }
 
 a,
 .btn-no-style,
 #comment-subtitle {
-  color: #f0f2f6;
+  color: #ffffff;
 }
 
 a:hover,
 .btn-no-style:hover {
-  color: #d5dbed;
+  color: #ffffff;
 }
 
 a {
@@ -62,7 +62,7 @@ textarea,
 input {
   padding: .5%;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #ffffff;
 }
 
 textarea:focus,
@@ -103,7 +103,7 @@ header,
 .site-row,
 .info-section,
 .form-heading {
-  background-color: #0b88e8;
+  background-color: #0b92e0;
 }
 
 .login-page,
@@ -144,7 +144,7 @@ header h1 {
 
 .site-row {
   display: flex;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ffffff;
   justify-content: center;
 }
 
@@ -192,7 +192,7 @@ main {
 .post .title span {
   font-style: italic;
   font-size: 90%;
-  color: #7d7d7d;
+  color: #ffffff;
 }
 
 .edit-link {
@@ -211,7 +211,7 @@ main {
 }
 
 .comment:nth-child(odd) {
-  background-color: #fff5eb;
+  background-color: #ffffff;
 }
 
 .comment .meta {
@@ -249,7 +249,7 @@ main {
 
 .form-heading h1,
 .form-heading h2 {
-  color: #b8cba2;
+  color: #ffffff;
 }
 
 .login-form,
