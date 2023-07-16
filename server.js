@@ -9,8 +9,7 @@ const helpers = require('./utils/helpers');//here we iport helpers to help with 
 const exphbs = require('express-handlebars');//here we import handlebard engine, allowing us modify our html content
 const hbs = exphbs.create({helpers});// this line allows us to register our helpers
 const session = require('express-session');//here we import the epress session middleware
-const SequelizeStore = require('connect-session-sequelize')(session.Store);//this line of code will allow managing of express 
-//sessions
+const SequelizeStore = require('connect-session-sequelize')(session.Store);//this line of code will allow managing of express //sessions
 
 const sess = {//this block of code allows us to configure our session parameters
     secret: process.env.DB_SECRET,//sets up a ID cookie

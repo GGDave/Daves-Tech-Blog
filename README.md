@@ -4,6 +4,9 @@ developes to see.
 >
 >[Please click on this link to view deployed application!](https://daves-tech-blog-5dcca7838055.herokuapp.com/)
 >![picture.][def]
+>
+>
+>
 
 [def]: ./images/techblog.png
 >
