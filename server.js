@@ -26,7 +26,7 @@ const sess = {//this block of code allows us to configure our session parameters
 };
 
 const app = express();//this initializes a new instance of Express and assigns it to the variable app.
-const PORT = process.env.PORT || 3001; //sets the port the application will use
+const PORT = process.env.PORT || 3000; //sets the port the application will use
 
 app.engine('handlebars', hbs.engine);//This tells Express to use the hbs Handlebars engine that was setup before for rendering views.
 app.set('view engine', 'handlebars');//This sets the default view engine to 'handlebars'.
