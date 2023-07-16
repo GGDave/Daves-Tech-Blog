@@ -3,7 +3,8 @@ const {User,Post,Comment} = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
-
+// /api/comments
+//retrieves all comments from the database
 router.get("/", (req, res) => {
   Comment.findAll()
     .then((dbCommentData) => res.json(dbCommentData))
@@ -13,7 +14,7 @@ router.get("/", (req, res) => {
     });
 });
 
-
+//will post new comments will require log in
 router.post('/', withAuth, (req, res) => {
   if (req.session) {
     Comment.create({

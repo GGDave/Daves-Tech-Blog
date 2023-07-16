@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 const {Post,User,Comment} = require('../models');
 const withAuth = require('../utils/auth');
 
-
+//will retrieve all posts from the logged in user
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
             where: {

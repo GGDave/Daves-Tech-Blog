@@ -2,7 +2,9 @@ const router = require('express').Router();
 const sequelize = require('../config/connection');
 const {User,Post,Comment} = require('../models');
 
-
+//the following code fetches all posts along with their associated comments and the usernames 
+//of the commenters and the post author. Then it sends a rendered 'homepage' view back 
+//to the client with this data.
 router.get('/', (req, res) => {
     Post.findAll({
             attributes: [
