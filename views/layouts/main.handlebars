@@ -16,6 +16,8 @@
             </h1>
             <nav>
                 {{#if loggedIn}}
+                {{!--handlebars dynamic content allows conditions. if logged in it will direct to dashboard
+                all other conditions will redirect to logging in  --}}
                 <a href="/dashboard">dashboard</a>
                 <button id="logout" class="btn-no-style logout">logout</button>
                 {{else}}
@@ -33,9 +35,11 @@
         </main>
     </div>
 
-    {{#if loggedIn}}
+    {{#if loggedIn}}{{!--if the user is logged in the logout.js script will load. changing the log in button to log out  --}}
     <script src="/js/logout.js"></script>
     {{/if}}
 </body>
 
 </html>
+
+{{!--  --}}

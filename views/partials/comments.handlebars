@@ -1,5 +1,6 @@
-<div class="comments">
-    {{#each this}}
+{{!--the following partial will generate a section of html that will display a list of comments  --}}
+<div class="comments"> {{!--the incoming data will contain user.name, created_at, and comment_text --}}
+    {{#each this}}{{!--this helper function will execute #each over every comment  --}}
     <section class="comment">
         <div class="meta">
             {{user.username}} on {{created_at}}
